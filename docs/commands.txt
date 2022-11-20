@@ -13,7 +13,7 @@ sudo apt-get install wget -y
 
 cd /home/ubuntu
 
-wget https://aws-codedeploy-us-west-2.s3.us-west-2.amazonaws.com/latest/install
+wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent status
@@ -22,4 +22,4 @@ sudo service codedeploy-agent status
 
 # Deploy the files on S3
 ```
-aws deploy push --application-name codeDeployDemoSandip --s3-location s3://devops-with-aws-sandip-youtube/codedeploydemo/app.zip --ignore-hidden-files --region us-west-2
+aws deploy push --application-name firstcodedeploy --s3-location s3://codedeploydemobucketnodeappp/codedeploydemo/app.zip --ignore-hidden-files --region us-east-1
